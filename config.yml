@@ -1,0 +1,26 @@
+redshift:
+  dbname: flowkey
+  host: flowkey-hiring.cerbzxpj1fkt.eu-west-1.redshift.amazonaws.com
+  password: oXQnppQN0W
+  port: '5439'
+  schema: a26fb052b
+  user: a26fb052b
+s3_bucket:
+  aws_access_key_id: AKIARDSHO4P4BZ6VPBIU
+  aws_secret_access_key: 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
+  bucket: flowkey-data-test-case-1b4ae218
+s3_tables:
+    "users.csv":
+        "user_id": "VARCHAR"
+        "signup_date": "TIMESTAMP"
+    "abtest_assignments.csv":
+        "user_id": "VARCHAR"
+        "variant": "VARCHAR"
+        "assigned_at": "TIMESTAMP"
+    "purchases.csv":
+        "user_id": "VARCHAR"
+        "plan_id": "VARCHAR"
+        "purchase_type": "VARCHAR"
+        "purchased_at": "TIMESTAMP"
+        "amount": "NUMERIC"
+
